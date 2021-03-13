@@ -70,9 +70,9 @@ function setup() {
 
 function draw() {
   //trex.debug = true;
-  background("grey");
+  background(255);
   text("Score: "+ score, 500,50);
-  
+  text("created by Ansh Pandey",250,50);
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
